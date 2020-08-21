@@ -18,20 +18,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+
+// Arduino general settings
+
 #include <Arduino.h>
-#include <Keyboard.h>
 #include <setmicro.h>
 
-void setup() {
-  setLed();
-  // open the serial port:
-  Serial.begin(9600);
-  // initialize control over the keyboard:
-  Keyboard.begin();
-}
-
-void loop() {
-  //Keyboard.press(136+83);
-  // check for incoming serial data:
- 
-}
+void setLed(){
+    // disable TXLED and RXLED (TXLED is always on if the USB is tranmitting data)
+    DDRD &= ~(1<<5);
+} 

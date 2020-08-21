@@ -18,20 +18,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#include <Arduino.h>
-#include <Keyboard.h>
-#include <setmicro.h>
 
-void setup() {
-  setLed();
-  // open the serial port:
-  Serial.begin(9600);
-  // initialize control over the keyboard:
-  Keyboard.begin();
-}
+#ifndef SETMICRO_h
+#define SETMICRO_h
 
-void loop() {
-  //Keyboard.press(136+83);
-  // check for incoming serial data:
- 
-}
+/**
+ * turn on and off Arduino build in leds
+ */
+void setLed();
+
+#endif
