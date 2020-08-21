@@ -22,6 +22,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #include <Keyboard.h>
 #include <setmicro.h>
 
+
+
+
 void setup() {
   setLed();
   // open the serial port:
@@ -31,7 +34,11 @@ void setup() {
 }
 
 void loop() {
-  //Keyboard.press(136+83);
-  // check for incoming serial data:
+
+  Keyboard.write(KEY_CAPS_LOCK);
+
+  delay(20000);
  
 }
+
+
