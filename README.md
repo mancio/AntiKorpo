@@ -13,3 +13,7 @@ otherwise Arduino can be impossible to reprogram by usb and you need an external
 ## KEY Modifiers
 
 [Not common keys](https://www.arduino.cc/en/Reference/KeyboardModifiers)
+
+## Hardware requirements
+
+every Atmega32U4 arduino with USB connections (leonardo like). I suggest the [Beetle Leonardo](https://www.aliexpress.com/item/32819992328.html) is really small 😎
